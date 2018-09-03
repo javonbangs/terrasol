@@ -962,12 +962,14 @@ section#cip-devices{
 
 @media (min-width:768px) {
     #hero {
-        background: linear-gradient(to top, #fff 19%, #FD927A 37%, #fec15f 55%, #FD927B 70%) !important;
+        background: linear-gradient(to top, #fff 0%, #fec15f 33%, #FD927B 80%) !important;
         #hero-svg {
-            width:50vh !important;
+            width: calc(50% - 1rem) !important;
+            position: absolute !important;
             svg {
-                transform: scale(1.3) !important;
-                transform-origin: 263% -75% !important;
+                transform: scale(1) !important;
+                position: absolute !important;
+                right:0;
             }
         }
         #hero-svg-2 {
@@ -977,9 +979,12 @@ section#cip-devices{
             }
         }
         .container {
-            padding: 6rem 1rem 0 !important;
-            left:25%;
-            width:50vh;
+            height: 70vh;
+            justify-content: flex-end;
+            padding: 0 2rem !important;
+            hgroup {
+                width:54%;
+            }
             h1 {
                 font-size:34px !important;
             }
@@ -993,14 +998,13 @@ section#cip-devices{
 
 
 #hero { 
-    background: linear-gradient(to top, #ffffff 43%, #fd927b 66%, #fec15f 79%, #fd927b 91%);
+    background: linear-gradient(to top, #fff 0%, #fec15f 33%, #FD927B 80%) !important;
     #hero-svg {
         width: 400px;  
         margin: 0 auto; 
         position: relative; 
-        z-index:999999;
+        z-index:999999; 
         max-width: 1440px;
-        transform:translateX(calc(100% - 28rem));
         svg {    
             transform: scale(.9);
             position:absolute;        
