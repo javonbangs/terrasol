@@ -1,0 +1,123 @@
+main {
+    nav {
+        #mobile-trigger {
+            color: $color-1;
+        }
+    }
+}
+
+ul.logos {
+    margin: 1rem 0;
+    @include flex();
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+    @include justify-content(center);
+    > * {
+        padding: .5rem;
+        @include flex();
+        @include align-items(center);
+        background: white;
+        margin: .5rem;
+        border-radius: 10px;
+        box-shadow: 0px 10px 40px -10px #b6d7ea;
+    }
+    img {
+        margin: 0!important;
+        width: 70px!important;
+        height: auto!important;
+        border-radius: initial!important;
+    }
+}
+
+.modal-head {
+    position: relative;
+    text-align: center;
+    // @include flex();
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+    h6 {
+      margin-top: 1rem;
+    }
+    // @include flex-child(1 0 300px);
+    // margin-bottom: 1rem;
+    &:after {
+      @include pseudo();
+      height: 140px;
+      background: #00a7ff17;
+    }
+    h6 {
+    }
+    > * {
+      z-index: 1;
+      position: relative;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      margin-top: 2rem;
+    }
+  }
+@keyframes dashFSafari {
+    to {
+      stroke-dashoffset: 1200px;
+    } 
+}  
+
+@keyframes dash {
+    to { 
+      stroke-dashoffset: 0;
+    } 
+}  
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    } 
+}   
+@keyframes rotateBack {
+    to {
+      transform: rotate(360deg);
+    } 
+}   
+#hero[data-visible='true'], #ecosystem[data-visible='true'] {
+    [data-name='windmill'] {
+        animation: rotate 5s linear infinite 
+    } 
+    [data-name='windmill-back'] {
+        animation: rotateBack 12s linear infinite;
+        animation-delay: -250ms;
+    }     
+    [data-name='pulse'] {
+        animation: scaleUp 2s linear infinite;
+    }
+    [data-direction='l'] {
+        stroke-dashoffset: 1200px;
+        animation: dash 30s infinite linear
+    }
+    
+    [data-direction='r'] {
+        stroke-dashoffset: 300px; 
+        animation: dashFSafari 30s infinite linear;
+    } 
+}
+#hero-windmill-1 {
+    transform-origin: 1362.7px 1167.61px
+}
+
+#hero-windmill-2 {
+    transform-origin: 1624.2px 1392.21px
+}
+
+#windmill-3 {
+    transform-origin: 527.28px 112.36px
+}
+
+#windmill-4 {
+    transform-origin: 126.45px 268.21px
+}
+
+[data-name='pulse'] {
+    transform-origin: 517px 37px
+}

@@ -1,0 +1,33 @@
+mixin header(data)
+  doctype html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{data.title}
+    <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68615604-3"></script>
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-68615604-3');
+    link(rel='stylesheet', type='text/css', href='/static/scss/index.css', async)
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900" rel="stylesheet")
+    meta(name='description', content=data.metadescription)
+    meta(property='og:url', content=data.url)
+    meta(property='fb:app_id', content='356184997881243')
+    meta(property='og:type', content='website') 
+    meta(property='og:title', content=data.title)
+    meta(property='og:description', content=data.metadescription)
+    meta(property='og:image', content=data.img)
+    meta(itemprop='name', content=data.title)
+    meta(itemprop='description', content=data.metadescription)
+    meta(itemprop='image', content=data.img)
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:title', content=data.title) 
+    meta(name='twitter:description', content=data.metadescription)
+    meta(name='twitter:image', content=data.img) 
+    script. 
+      // FB PX 
+    //- Can insert json LD here
+    script(type="application/ld+json") !{JSON.stringify(data.ld)}

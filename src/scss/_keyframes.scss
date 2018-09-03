@@ -1,0 +1,154 @@
+@keyframes scaleUp {
+    0% {
+        opacity: 1;
+    background: #a1f7f0;
+    transform: scale(0);
+    }
+    70% {
+        opacity: .8;
+    }
+    100% {
+    opacity: .1;
+    transform: scale(1.4);
+    }
+}
+
+@include keyframes(someKeyframe) {
+    0% { 
+        transform: scale(1);
+        opacity: 0
+    } 
+    25% {
+        transform: scale(1);
+        opacity: .75
+    }
+    100% {   
+        transform: scale(2.75);
+        opacity: 0
+    } 
+}
+
+@include keyframes(float) {
+    0% {
+        transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@include keyframes(col1Anim){
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-800px);    
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@include keyframes(col2Anim){
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-800px);    
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@include keyframes(col3Anim){ 
+    0% {
+        transform: rotate(-20deg) translateY(0px);
+    }
+    33% {
+        transform: rotate(-20deg) translateY(-90px);    
+    }
+    66% {
+        transform: rotate(-20deg) translateY(90px);
+    }
+    100% {
+        transform: rotate(-20deg) translateY(0px);
+    }
+}
+@include keyframes(col4Anim){ 
+    0% {
+        transform: rotate(-20deg) translateY(0px);
+    }
+    33% {
+        transform: rotate(-20deg) translateY(90px);    
+    }
+    66% {
+        transform: rotate(-20deg) translateY(-90px);
+    }
+    100% {
+        transform: rotate(-20deg) translateY(0px);
+    }
+}
+
+@include keyframes(rotateAnimation) {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        fill:#21d646;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@include keyframes(xfade) {
+    12% {
+        opacity:1;
+    }
+    35% {
+        opacity:0;
+    }
+    70% {
+        opacity:0; 
+    }
+}
+ @include keyframes(zoomIn) {
+     0% {
+         transform:scale(1);
+     }
+     50% {
+         transform:scale(1.5);
+     }
+     100%{
+         transform: scale(1);
+     }
+ }  
+
+ @include keyframes(pulse) {
+     0% {
+         transform: scale(1);
+         opacity: .75;
+     }
+     25% {
+         transform: scale(1);
+         opacity:.75;
+     }
+     100% {
+         transform: scale(2.5);
+         opacity:0;
+     }
+ }

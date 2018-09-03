@@ -1,0 +1,135 @@
+@import '_vars';
+@import '_mixins';
+
+
+nav {
+    background:rgba(23,26,26,.5);
+    padding:1rem;
+}
+#menu-items-wrap {
+    @include flex();
+}
+#menu-items-wrap-desktop {
+    position: fixed;
+    height: 100%;
+    background: #001d4c;
+    transition: all .15s linear;
+    right: 0;
+    top: 0;
+    z-index: 123;
+    display: none;
+    width: 300px;
+    left: 100%;
+    * {
+        color:white;
+    }
+    ul {
+        margin:2rem 0;
+    }
+}
+main {
+    #nav-wrap {
+        max-width: 1440px;
+        position: relative;
+        margin: 0 auto;
+        nav {
+            width: 100%;
+            position: absolute;
+            transition: all .25s linear;
+            z-index: 1000;
+            @include flex();
+            @include justify-content(space-between);
+            * {
+                font-size: 13px;
+            }
+            a {
+                svg {
+                    * {
+                        fill:white; 
+                    }
+                }
+            }
+            #nav-logo {
+                @include flex();
+                @include align-items(center);
+                width: 120px;
+            } 
+            svg {
+                width: 120px;
+            }
+            #menu-items-wrap {
+                right: 1rem;
+                #mobile-trigger {
+                    @include flex();
+                    @include align-items(center);
+                    .icon-align-right {
+                        color: white;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            ul#menu-items {
+                transition: all .35s linear;
+                li {
+                    z-index: 12;
+                }
+            }
+            #mobile-trigger {
+                cursor:pointer;
+                color:white;
+            }  
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        ul#menu-items {
+            left: 100%;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            @include flex();
+            @include align-items(center);
+            @include flex-direction(column);
+            @include justify-content(center);
+            button {
+                color:white;
+            }
+            button.primary {
+                color: white;
+            }
+        }
+        nav {
+            #mobile-trigger {
+                display:block;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #menu-items-wrap-desktop {
+        display:block;
+    }
+    #menu-items-wrap {
+        #mobile-trigger {
+            .icon-align-right {
+                color: #001d4c;
+                font-size: 28px;
+            }
+        }
+    }
+    nav {
+        background:initial;
+        #menu-items {
+            @include flex();
+            >* {
+                margin-right:1rem;
+            }
+            >:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}

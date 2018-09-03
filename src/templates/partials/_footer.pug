@@ -1,0 +1,377 @@
+mixin footer(opts)
+    footer
+        .container.flex.flex-column#footer-content
+            .hide-lg.flex.justify-content-center#footer-content-top
+                a#nav-logo(href='/')
+                    include ../assets/tlogo.svg
+            .flex.justify-content-center.justify-space-between-lg.align-items-center#footer-content-bottom
+                .flex.align-items-center.hide-sm
+                    small
+                        span.icon-paint-format
+                        small Designed by Javon Bangs  
+                a#nav-logo.hide-sm(href='/')
+                    include ../assets/tlogo.svg
+                .flex.align-items-center
+                    small 
+                        span.icon-cogs  
+                        small Built in San Diego   
+
+
+//-    aside#todd.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#todd')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Todd-Lemons.jpg' alt='')
+                h6  Todd Lemons
+                small.desc Chairman
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Todd\ Lemons/logo-ecosmart.png' alt='')
+                    li
+                        img(src='/static/team/logos/Todd\ Lemons/logo-envision.png' alt='')
+                    li
+                        img(src='/static/team/logos/Todd\ Lemons/logo-infiniteearth.png' alt='')
+            p.desc For the last 28 years, Todd has been a recognized specialist in the market development of natural resources in emerging markets with a particular focus on environmentally low impact projects. Todd has a demonstrated track record of identifying undervalued and underperforming assets in natural resource environments, particularly those in developing countries, and has led multiple ventures that materialize their untapped value. 
+            p He has lived, worked and built successful companies in South America and Asia for more than 25 years including projects in Guyana, Chile, Bolivia, Brazil, Mexico, Malaysia, Indonesia, Thailand and China. The companies that Todd founded include Envision Corp. (an incubator for sustainable technology companies), Composite Technologies (an environmental engineering company that develops, produces and distributes environmentally low-impact “green” building products to corporations including: The Home Depot, Lowes and Masonite/Stanley Door and Jeld-Wen Window and Door), Infinite Earth (author of the first forest carbon accounting methodology for REDD+, which is now a mechanism embodied in the Paris Agreement, development of the first REDD+ project under the VCS/CCBA standards, and owner of the largest privately funded orangutan reserve in the world) and Veridium (an environmental blockchain company that powers sustainable supply chain solutions).
+    aside#team-jim.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-jim')
+        .modal-inner    
+            .modal-head
+                img(src='/static/team/Jim-Procanik.jpg' alt='')
+                h6  Jim Procanik 
+                small.desc Executive Director
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Jim\ Procanik/logo-greenprojects.png' alt='')
+                    li
+                        img(src='/static/team/logos/Jim\ Procanik/logo-infiniteearth.png' alt='')
+            p.desc Jim is the co-founder of InfiniteEarth, a company dedicated to developing and managing tropical conservation land banks and provides environmental offsets and private label CSR solutions to companies across the globe. Along with Todd Lemons, Jim helped develop the first validated REDD+ project ever under the VCS and helped define the criteria by which all projects are measured. After spending 5 years as InfiniteEarth’s Managing Director, Jim founded Green Projects, Inc., a company developing new consumer behavior models through disruptive sustainable retail concepts. Jim has also spent more than two decades growing startup businesses in the Entertainment & Fashion industries in Los Angeles, New York and Shanghai. Jim’s businesses have boasted a prestigious list of clients including Nickelodeon, Universal Studios, and NBC, as well as Macy’s, Bloomingdale’s, Saks Fifth Avenue, and Neiman Marcus. 
+    aside#team-neslihan.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-neslihan')
+        .modal-inner 
+            .modal-head
+                img(src='/static/team/neslihan.jpg' alt='')
+                h6  Neslihan Feradov
+                small.desc Director of Strategic Partnerships &amp; Marketing
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Neslihan\ Feradov/logo-abb.png' alt='')
+                    li
+                        img(src='/static/team/logos/Neslihan\ Feradov/logo-oxford.png' alt='')
+                    li
+                        img(src='/static/team/logos/Neslihan\ Feradov/logo-turkey.png' alt='')
+                    li
+                        img(src='/static/team/logos/Neslihan\ Feradov/logo-unilever.svg' alt='')
+            p.desc Neslihan has held executive positions in ABB, New York City and Unilever, Dubai where she advised and spearheaded various business development and marketing strategies with a heavy focus on sustainability. Neslihan has worked within the Ministry of Energy in Ankara, Turkey whereby she helped execute various renewable energy and sustainability strategies with department heads of several ministries, including the office of the prime minister. Neslihan was also the co-founder of Kairos Society UK chapter, a global community of top entrepreneurs (including Forbes 30 under 30) and leaders aimed to solve the world’s greatest challenges. Neslihan graduated with a Master’s degree in Environmental Change and Management from Oxford University and completed her dissertation under the supervision of one of the leading thinkers of the green movement, Dr. Ben Caldecott within the Stranded Assets Program. She successfully executed her dissertation project in rural villages with direct support from the CEO of one the largest coal thermal power plant companies in India. Besides her professional accomplishments, Neslihan has completed 2 marathons, is an avid triathlete, Oxford-Cambridge Club Member and a Young Leader at the Robert F. Kennedy Human Rights Foundation. 
+    aside#team-michael.hidden.modal
+        .modal-header  
+            .icon-x.primary.modal-close-btn(data-close='#team-michael')
+        .modal-inner    
+            .modal-head
+                img(src='/static/team/Michael-Sofaer.jpg' alt='')
+                h6  Michael Sofaer
+                small.desc Interim CTO
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Michael\ Sofaer/logo-bkcm.png' alt='')
+                    li
+                        img(src='/static/team/logos/Michael\ Sofaer/logo-tradehill.png' alt='')
+            p.desc Michael is the CTO of Brian Kelly Capital Management and Interim CTO for Veridium, a digital asset hedge fund. He co-founded Pings (a Knight-grantee Ripple currency for charities), was CIO of Tradehill (an early US-based Bitcoin exchange), a cofounder of Inigral (a Facebook app for education), and an engineer at ModelN, Pivotal Labs, and CloudFlare. 
+    aside#team-Brian.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-michael')
+        .modal-inner    
+            .modal-head
+                img(src='/static/team/Brian-Kelly.jpg' alt='')
+                h6  Brian Kelly
+                small.desc Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Brian\ Kelly/logo-bkcm.png' alt='')
+                    li
+                        img(src='/static/team/logos/Brian\ Kelly/logo-cnbc.png' alt='')
+            p.desc Brian is a CNBC contributor and can be seen regularly on Fast Money. He is also the CEO and Founder of BKCM LLC, a digital asset investment firm and the portfolio manager of the BKCM Digital Asset Fund – a hedge fund focused on digital currencies and assets. Brian Kelly has over twenty-five years of experience in financial markets and is the author of the book The Bitcoin Big Bang – How Alternative Currencies are About to Change the World.
+    aside#team-Jaron.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Jaron')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Jaron.jpg' alt='')
+                h6 Jaron Lukasiewicz
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Jaron\ Lukasiewicz/logo-autonomos.png' alt='')
+                    li
+                        img(src='/static/team/logos/Jaron\ Lukasiewicz/logo-cavirtex.png' alt='')
+                    li
+                        img(src='/static/team/logos/Jaron\ Lukasiewicz/logo-coinsetter.png' alt='')
+                    li
+                        img(src='/static/team/logos/Jaron\ Lukasiewicz/logo-jpmorgan.png' alt='')
+            p.desc Jaron is the CEO and Founder at Autonomos Capital, a leading advisor in the blockchain industry. He has been an executive in the industry since 2012, previously serving as CEO of Coinsetter, one of the first bitcoin exchanges in the US, and Cavirtex, a leading exchange in Canada. Both companies were acquired by Kraken in 2016. Prior to founding Coinsetter, Jaron was a private equity associate at The CapStreet Group, an investment banker at J.P. Morgan and a private equity analyst at SPB Partners. Jaron graduated from Rice University with a B.A. in Economics. He has been featured in The Wall Street Journal, The Financial Times, Bloomberg, CNBC, TechCrunch and other media publications.
+    aside#team-Hazem.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Hazem')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Hazem-Danny-Nakib.jpg' alt='')
+                h6 Hazem Danny Nahib
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Hazem\ Danny\ Nakib/logo-bostonconsultinggroup.png' alt='')
+                    li
+                        img(src='/static/team/logos/Hazem\ Danny\ Nakib/logo-coinfirm.png' alt='')
+                    li
+                        img(src='/static/team/logos/Hazem\ Danny\ Nakib/logo-humaniq.png' alt='')
+                    li
+                        img(src='/static/team/logos/Hazem\ Danny\ Nakib/logo-securrency.png' alt='')
+            p.desc Hazem is a fintech and regtech expert who currently serves on the Board of Advisors of Securrency, Coinfirm, Humaniq, and F6S. Hazem is also the co-founder of multiple business incubators and frequently speaks on the changing regulatory landscape of blockchain and other emerging technologies. Mr Nakib has also worked with the Royal Bank of Canada and the Boston Consulting Group in various roles related to fintech and regtech including business financial services and venture creation specific to supporting SME’s.
+    aside#team-Yo.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Yo')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Yo-Sub-Kwon.jpg' alt='')
+                h6 Yo Sub Kwon
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Yo\ Sub\ Kwon/logo-hosho.png' alt='')
+                    li
+                        img(src='/static/team/logos/Yo\ Sub\ Kwon/logo-launchkey.svg' alt='')
+            p.desc Yo Sub Kwon is the CEO of Hosho Group, the global leader in blockchain security. Prior to Hosho, Yo co-founded LaunchKey, a cybersecurity company providing secure authentication technology. LaunchKey was acquired in 2016 and is now owned by TransUnion. A serial entrepreneur and cybersecurity expert, Yo has an established history in the blockchain space, mining his first bitcoin in 2010 and later serving as a co-founder of Coinsetter, a US-based bitcoin exchange founded in 2012 and acquired by Kraken. Yo was included in Inc. Magazine's prestigious 2013 "30 Under 30" entrepreneur list.
+    aside#team-Yunsoo.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Yunsoo')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Yunsoo-Andre-Kim.jpg' alt='')
+                h6 Yunsoo Andre Kim
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Yunsoo\ Andre\ Kim/logo-blockchaini.png' alt='')
+                    li
+                        img(src='/static/team/logos/Yunsoo\ Andre\ Kim/logo-ensureum.png' alt='')
+                    li
+                        img(src='/static/team/logos/Yunsoo\ Andre\ Kim/logo-temco.png' alt='')
+            p.desc Andre Kim is the Co-Founder and CEO of Blockchaini, a cryptocurrency fund providing global consultation services, blockchain strategy advice and technical expertise for the acceleration of Crypto Fund and ICO Projects. Aside from Veridium, one of his most well known projects is accelerating INSUREUM which was voted as a Top 20 start up on Forbes magazine and Temco, the first Korean supply chain management project.  Andre has also spearheaded the first generation of Crypto-Currency miners in South Korea when it wasn’t a popular concept. His ultimate career mission is to merge Korean Blockchain technology with the rest of the world to create global technological impact in the blockchain space.
+    aside#team-Alan.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Alan')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Alan-Laubsch.jpg' alt='')
+                h6 Alan Laubsch
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Alan\ Laubsch/logo-lykke.svg' alt='')
+                    li
+                        img(src='/static/team/logos/Alan\ Laubsch/logo-msci.png' alt='')
+            p.desc Alan is an entrepreneur, connector, and a thought leader in risk management. His mission is to protect Earth’s most vital ecosystems by democratizing natural capital investment. Alan is Chief Strategist of GenBlue, a venture studio dedicated to building a liquid global natural capital marketplace. Previously, Alan established Natural Capital Markets at Lykke AG, and listed the world’s first mangrove and Blue Carbon backed blockchain token (TREE). Alan has over two decades of risk management experience with leading financial institutions, and was a founding member of the RiskMetrics Group (now MSCI), a JPMorgan spin-off. Alan holds a BS degree in Industrial Engineering & Engineering Management from Stanford University. 
+    aside#team-Martin.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Martin')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Martijn-Wilder.jpg' alt='')
+                h6 Martin Wilder
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Martin\ Wilder/cefc.png' alt='')
+                    li
+                        img(src='/static/team/logos/Martin\ Wilder/logo-arena.svg' alt='')
+                    li
+                        img(src='/static/team/logos/Martin\ Wilder/logo-baker.png' alt='')
+            p.desc Martijn is head of Baker and McKenzie’s Global Environmental Markets and Climate Change. His other roles include Visiting Professor of Climate Change Law at the Australian National University, Chair of the Australian Renewable Energy Agency (ARENA) and a Director of the Clean Energy Finance Corporation, WWF (Australia) and the Climate Council. He holds advisory roles as Chair of the NSW Climate Change Council, a Governing Board Member of the Renewable Energy and Energy Efficiency Partnership (REEEP) and as a member of the Wentworth Group of Concerned Scientists. He is also the Deputy Chair of the Private Sector Roundtable of the Asia Pacific Rainforest Recovery Plan and on the Reef Trust Innovative Financial Mechanisms Panel. In 2012, Martijn was awarded a Member of the Order of Australia. 
+    aside#team-Gerald.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Gerald')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Gerald-Prolman.jpg' alt='')
+                h6 Gerald Prolman
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Gerald\ Prolman/logo-wildlifeworks.png' alt='')
+                    li
+                        img(src='/static/team/logos/Gerald\ Prolman/logo-madeinnature.svg' alt='')
+
+            p.desc Gerald Prolman is a serial entrepreneur with a 38-year history building branded, specialty consumer product companies having established several new market segments with ventures that join together for-profit and cause related business interests. Companies founded and led by Mr. Prolman include Made in Nature Inc. (the first organic produce brand in the US to break through to mass market retail) and Organic Bouquet, Inc. (the worlds first online organic floral gifting site). Gerald joined Wildlife Works in 2004 and served as EVP of Business Development in 2007. Gerald was named president of “Everland” a new company launched by Wildlife Works that exclusively represents the world’s largest and highest quality portfolio of REDD+ projects in Africa, Latin America and Asia.
+    aside#team-Dr.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Dr')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Scott-Massy.jpg' alt='')
+                h6 Dr. Scott Massy
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Dr\ Scott\ Masey/logo-globalplatform.png' alt='')
+                    li
+                        img(src='/static/team/logos/Dr\ Scott\ Masey/logo-harvard.png' alt='')
+                    li
+                        img(src='/static/team/logos/Dr\ Scott\ Masey/logo-moc.png' alt='')
+            p.desc Scott is Chairman and CEO of Global Action Plat- form, a university-business alliance to advance scalable, sustainable solutions for abundant food, health, and prosperity. Global Action Platform is affiliated with the Institute for Strategy and Competitiveness, Harvard Business School, and Dr. Massey is Executive in Residence at the Massey School of Business, Belmont University, and a member of Michael Porter’s national Microeconomics of Competitiveness network.
+    aside.desc#team-Lawrence.hidden.modal 
+        .modal-header 
+            .icon-x.primary.modal-close-btn(data-close='#team-Lawrence') 
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Lawrence-Dunn.jpg' alt='') 
+                h6 Lawrence Dunn
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Lawrence\ Dunn/logo-citi.png' alt='')
+                    li
+                        img(src='/static/team/logos/Lawrence\ Dunn/logo-riskmetrics.png' alt='')
+            p.desc Lawrence has over 25 years of experience in derivatives trading and fintech. He was the head of the risk management business (EMEA) at RiskMetrics Group, where he also held management positions in marketing, research, and CDO products. Lawrence was global head of base metals trading at Citigroup and a derivatives trader in metals and energy at JPMorgan. Lawrence holds a degree in applied mathematics from Harvard.
+    aside#team-Shandi.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Shandi')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/shandi.png' alt='') 
+                h6 Shandi Modi
+                small.subtitle Advisor
+                ul.logos
+                    li
+                        img(src='/static/team/logos/Shandi\ Modi/logo-ideacarbon.png' alt='')
+                    li
+                        img(src='/static/team/logos/Shandi\ Modi/logo-ideaglobal.png' alt='')
+                    li
+                        img(src='/static/team/logos/Shandi\ Modi/logo-lse.png' alt='')
+            p.desc Shandi is the founder of IDEAglobal Group, a globally recognized ratings development company that advises governments, hedge funds and finance professionals worldwide. Since 2008, Shandi has focused on creating product architecture for carbon risk-returns to the standard of major asset classes and subsequently founded the Carbon Ratings Agency and IDEAcarbon to service the IDEAglobal Group network of public and private sector organisations.  Shandi graduated from the London School of Economics with a BSc (Economics) and MSc (International Monetary Economics) and was awarded an Honorary Fellowship by the London School of Economics in 1997 for his services to developing financial market solutions for the global economy.
+    aside#team-Joel.hidden.modal
+        .modal-header
+            .icon-x.primary.modal-close-btn(data-close='#team-Joel')
+        .modal-inner
+            .modal-head
+                img(src='/static/team/Joel-T.jpg' alt='')
+                h6 Joel Telpner
+                small.subtitle Advisor
+                ul.logos
+                        li
+                            img(src='/static/team/logos/Joel\ Telpner/logo-sullivan.png' alt='')
+            p.desc Joel Telpner, partner Sullivan & Worcester's New York office, is a seasoned advisor & strategist. Mr. Telpner brings more than 30 years of legal experience in a career that includes time as an AmLaw 100 partner, the former U.S. general counsel of a global financial institution and has an extensive and unique combination of transactional and regulatory experience. Mr. Telpner is leading policy initiatives on global regulatory issues for blockchain on behalf of the Global Blockchain Business Council and the Blockchain Research Institute. He is also a member of the Wall Street Blockchain Alliance’s Legal Working Group, which is developing guidance on best practices for ICOs.
+    aside#typeform.modal.hidden
+        .modal-header
+        .modal-inner
+            iframe(id="typeform-full" width="100%" height="100%" frameborder="0" src="https://jaronlukasiewicz.typeform.com/to/W5vFjX")
+    script(src='/static/index.js')
+    footer 
+        //- #social-wrap
+            ul#social
+                a(href='https://www.facebook.com/veridiumlabs/')
+                    .icon-facebook
+                a(href='https://t.me/veridiumlabs')
+                    .icon-telegram
+                a(href='https://twitter.com/veridiumlabs')
+                    .icon-twitter
+                a(href='https://www.linkedin.com/company/25057971/')
+                    .icon-linkedin
+                a(href='https://vimeo.com/veridiumlabs')
+                    .icon-vimeo
+        #footer-svg-wrap
+            include ../assets/footer.svg
+        .container
+            #footer-cta
+                hgroup
+                    h2 Be part of our mission
+                    p We’re here to answer your questions.
+                .btn-group
+                    a(href='mailto:inquiries@veridium.io')
+                        button.secondary.iconed-rt
+                            div
+                                span inquiries@veridium.io
+                                .icon-mail5
+                    button.secondary.iconed-rt(data-modal-button='#typeform')
+                        div
+                            span Join our newsletter
+                            .icon-mail3
+                hr
+                ul#social
+                    a(href='https://www.facebook.com/veridiumlabs/')
+                        .icon-facebook
+                    a(href='https://t.me/veridiumlabs')
+                        .icon-telegram
+                    a(href='https://twitter.com/veridiumlabs')  
+                        .icon-twitter
+                    a(href='https://www.linkedin.com/company/25057971/')
+                        .icon-linkedin
+                    a(href='https://www.reddit.com/r/VeridiumLabs/')
+                        .icon-reddit
+                
+                //- #footer-form
+                    small.subtitle Sign up to receive investor updates
+                    form.inline(action="")
+                        input(type='text' placeholder='Enter your email')
+                        button.primary
+                            div
+                                span Submit
+            //- #footer-container-newsletter
+                #footer-container-newsletter-content
+                    small Sign up for our newsletter
+                    form.inline(action="")
+                        input(type='text' placeholder='Enter your email..')
+                        button.primary()
+                            | Submit
+                hr
+            //- #footer-company 
+                //- img(src='/static/img/logo.png' style='max-width: 150px')
+                //- small Betting redefined
+            //- #footer-links-row-1.footer-links-row
+                small The Platform
+                ul
+                    li 
+                        a(href='#whitepaper') Whitepaper
+                    li 
+                        a(href='#about') Explainer Video
+                    li 
+                        a(href='#one-pager') One-pager
+                    li 
+                        a(href='#pitch-deck') Pitch Deck
+                    li 
+                        a(href='#') Timeline
+            //- #footer-links-row-2.footer-links-row
+                small Platform
+                ul
+                    li 
+                        a() About
+                    li 
+                        a() Platform 
+                    li 
+                        a() Team
+                    li 
+                        a() Partners
+                    li 
+                        a() Affiliates
+            //- #footer-links-row-3.footer-links-row
+                small Platform
+                ul
+                    li 
+                        a() About
+                    li 
+                        a() Platform
+                    li 
+                        a() Timeline
+                    li 
+    #tos
+        .container
+            small.subtitle 
+                span Copyright Veridium 20
+                    a(href='https://beaver.digital') 1
+                    a(href='https://www.getfractals.com') 8
+            //- small.subtitle
+                span Created by&nbsp;
+                a(href='https://beaver.digital') BEAVE
+                a(href='https://www.getfractals.com') R

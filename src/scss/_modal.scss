@@ -1,0 +1,79 @@
+@import '_vars';
+@import '_mixins';
+
+.modal {
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    @include flex();
+    overflow: hidden;
+    position: fixed;
+    visibility: visible;
+    transition: all .25s linear;
+    @include align-items(center);
+    @include justify-content(center);
+    background: transparentize($color-1, .05);
+    &.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      .modal-inner {
+        opacity: 0;
+        transform: translate(0px, -250px) scale(.75);
+      } 
+    }
+    .modal-header {
+      min-height: 45px;
+      @include flex();
+      @include justify-content(space-between);
+    }
+    p {
+      max-width: 500px;
+      max-width: 90%;
+      margin: 1rem auto 2rem;
+    }
+    hr {
+      border-top: 1px solid $color-1;
+      margin: 1rem auto;
+    }
+    .modal-inner {
+      width: 100%;
+      margin: 1rem;
+      background: #ebf7ff;
+      opacity: 1;
+      // max-width: 700px;
+      // max-height: 650px;
+      width: 90vw;
+      height: 90vh;
+      max-width: 960px;
+      overflow-y: scroll;
+      position: relative; 
+      border-radius: 3px;
+      transform: translate(0px, 0px) scale(1);
+      // box-shadow: 0px 0px 100px -10px $color-1-dark; 
+      transition: all .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      form {
+        input {
+          &::placeholder {
+            // color: white
+          }
+        }
+      }
+      @include flex();
+      @include flex-direction(column);
+      // @include justify-content(space-between);
+      hr {
+          max-width: initial;
+          opacity: .35;
+      }
+      .modal-close-btn {
+          border: 0;
+          background: initial;
+          padding: 1rem;
+      }
+      .modal-inner-body {
+      }
+    }
+  }

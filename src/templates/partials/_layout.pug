@@ -1,0 +1,61 @@
+include _header
+include _footer 
+include _mixins
+block vars
+block head
+body(class=type)
+    main(data-show-nav='false')
+        #nav-wrap
+            nav()
+                a#nav-logo(href="/")
+                    include ../assets/tlogo.svg  
+                #menu-items-wrap
+                    ul#menu-items(data-show-nav='false')
+                        li 
+                            a(href="#")
+                                button.primary.iconed-rt
+                                    div
+                                        span Join our Telegram
+                                        div.icon-telegram
+                    #mobile-trigger
+                        div.icon-align-right
+                #menu-items-wrap-desktop
+                    ul 
+                        li
+                            a(onclick="document.querySelector('main').dataset.showNav = 'false'")
+                                button.tri
+                                    div
+                                        .icon-cross
+                        li
+                            a(href="#desc")
+                                button.tri
+                                    div  
+                                        span About 
+                        li
+                            a(href="#resources")
+                                button.tri
+                                    div
+                                        span Case Studies
+                        li 
+                            a(href="details")
+                                button.tri
+                                    div
+                                        span
+                        li 
+                            a(href="#team")
+                                button.tri
+                                    div
+                                        span The Team
+                        li 
+                            a(href="#timeline")
+                                button.tri
+                                    div
+                                        span Timeline
+                        li 
+                            a(href="#")
+                                button.tri
+                                    div
+                                        span Join our Telegram
+                                    
+        block content
++footer()        
