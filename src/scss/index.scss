@@ -21,6 +21,7 @@
         --heroTransform: translateX(calc(100vw - 1280px));
     }
 }
+
 a {
     text-decoration: none;
 }
@@ -964,11 +965,16 @@ section#cip-devices{
     #hero {
         background: linear-gradient(to top, #fff 0%, #fec15f 33%, #FD927B 80%) !important;
         #hero-svg {
-            width: calc(50% - 1rem) !important;
-            position: absolute !important;
+            width: 50% !important;
+            left:0;
+            transform: initial !important;
+            transform-origin: initial;
+            height:3px;
+            margin:0 !important;
             svg {
-                transform: scale(1) !important;
-                position: absolute !important;
+                transform: scale(1.4) !important;
+                width:600px;
+                transform-origin: top right;
                 right:0;
             }
         }
@@ -1005,19 +1011,10 @@ section#cip-devices{
         position: relative; 
         z-index:999999; 
         max-width: 1440px;
+        transform: var(--heroTransform);
         svg {    
             transform: scale(.9);
             position:absolute;        
-        }
-    }
-    #hero-svg-2 {
-        margin: 0 auto;
-        position: relative;
-  
-        svg {     
-            transform: scale(1.7);
-            position:absolute;  
-            transform-origin:80% 25%;   
         }
     }
     .container { 
@@ -1040,10 +1037,19 @@ section#cip-devices{
 } 
 
 #desc {
-    z-index:3;
-    margin:4rem 0;
+    z-index:0;
+    margin:0;
     position:relative;
+    #hero-svg-2 {
+        margin: 0 auto;
+        position: relative;
+        width:100%;
+        svg {     
+            transform: scale(1.1);
+        }
+    }
     .container {
+        top:-50px;
         @include flex();
         @include align-items(center);
         @include flex-direction(column);
@@ -1064,38 +1070,14 @@ section#cip-devices{
         }
         #desc-art {
             width: 100%;
-            .iphone {
-                border-radius: 30px;
-                background: linear-gradient(180deg, #f7fbfe 0, #dde2e8);
-                box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(187,200,225,0.35), 0 2px 6px rgba(40,39,66,0.14), 0 10px 20px rgba(40,39,66,0.06), 76px 75px 169px -35px rgba(63,51,193,0.5);
-                border-style: solid;
-                border-color: #e7ecf1;
-                overflow: hidden;
-                height: 460px;
-                width: 220px;
-                padding: 45px 8px 60px;
-                z-index: 2;
-                transform: matrix3d(1, -0.09, 0, 0.00032, 0.05, 1, 0, 0.00006, 0, 0, 1, 0, -9, -70, 0, 1.05);
-                position: absolute;
-                bottom: 0;
-                border-width: 2px 2px 4px 6px;
-                &:before {
-                    content: "";
-                    width: 50px;
-                    height: 7px;
-                    border-radius: 10px;
-                    background: rgba(0,0,0,0.08);
-                    position: absolute;
-                    top: 24px;
-                    left: calc(50% - 25px);
-                }
-                .mask {
-                    height: 100%;
-                    width: 100%;
-                    overflow: hidden;
-                    border-radius: 8px;
-                    box-shadow: -1px 1px 4px rgba(107,124,147,0.45);
-                    background: white;
+            padding: 2rem 1rem;
+            svg {
+                g {
+                    circle {
+                        color:white;
+                        -webkit-animation: flash linear 1s infinite;
+                        animation: flash linear 1s infinite;
+                    }
                 }
             }
         }
@@ -1103,6 +1085,25 @@ section#cip-devices{
 } 
 @media (min-width: 768px) {
     #desc {
+        .container {
+            height: 70vh;
+            margin-top: -275px;
+            padding: 0 2rem;
+            hgroup {
+                width:54%;
+                text-align:center;
+            }
+            #desc-art {
+                width:50% !important;
+            }
+            h1 {
+                font-size: 34px !important;
+                margin:0 auto;
+            }
+            p {
+                font-size: 1rem !important;
+            }
+        }
         
     }
        
