@@ -1123,27 +1123,22 @@ section#cip-devices{
             transform-origin:20% 15%;
         }
     }
-    #resources-svg {
-        width:400px;
-        position:absolute;
-        max-width:1580px;
-        top:-8%;
-        right:-8%;
-        svg {
-            position:absolute;
-            transform:scale(.6);
-        }
-    }
     .container {
         @include flex();
         @include align-items(center);
-        padding: 33rem 2rem 4rem;
+        flex-direction: column;
+        padding-bottom: 4rem;
+        #resources-svg {
+            width:100%;
+            padding:0rem 1rem;
+        }
         hgroup {
             max-width:530px;
         }
         #some-parent {
             width: 100%;
             max-width: 530px;
+            margin-top:calc(15vw);
             button {
                 margin-top:2rem;
             }
