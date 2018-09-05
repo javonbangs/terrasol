@@ -962,8 +962,7 @@ section#cip-devices{
 
 
 @media (min-width:768px) {
-    #hero {
-        background: linear-gradient(to top, #fff 0%, #fec15f 33%, #FD927B 80%) !important;
+    #hero {  
         #hero-svg {
             width: 50% !important;
             left:0;
@@ -985,7 +984,7 @@ section#cip-devices{
             }
         }
         .container {
-            height: 70vh;
+            height: 57vh;
             justify-content: flex-end;
             padding: 0 2rem !important;
             hgroup {
@@ -1004,7 +1003,7 @@ section#cip-devices{
 
 
 #hero { 
-    background: linear-gradient(to top, #fff 0%, #fec15f 33%, #FD927B 80%) !important;
+    background: linear-gradient(to top, #fff 19%, #fec15f 43%, #FD927B 90%) !important;
     #hero-svg {
         width: 400px;  
         margin: 0 auto; 
@@ -1043,13 +1042,14 @@ section#cip-devices{
     #hero-svg-2 {
         margin: 0 auto;
         position: relative;
-        width:100%;
+        max-width:1580px;
         svg {     
             transform: scale(1.1);
+            width:100%;
         }
     }
     .container {
-        top:-50px;
+        top:-65px;
         @include flex();
         @include align-items(center);
         @include flex-direction(column);
@@ -1086,9 +1086,9 @@ section#cip-devices{
 @media (min-width: 768px) {
     #desc {
         .container {
-            height: 70vh;
-            margin-top: -275px;
+            margin-top: calc(-21vw);
             padding: 0 2rem;
+            top:0;
             hgroup {
                 width:54%;
                 text-align:center;
@@ -1108,11 +1108,99 @@ section#cip-devices{
     }
        
 }
-@media (max-width: 768px) { 
-    #desc {
-
+#resources {
+    z-index:123;
+    position: relative;
+    #resources-bg-wrap {
+        z-index: -1;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1580px;
+        svg {
+            position:absolute;
+            transform:scale(2.5);
+            transform-origin:20% 15%;
+        }
     }
-  
+    #resources-svg {
+        width:400px;
+        position:absolute;
+        max-width:1580px;
+        top:-8%;
+        right:-8%;
+        svg {
+            position:absolute;
+            transform:scale(.6);
+        }
+    }
+    .container {
+        @include flex();
+        @include align-items(center);
+        padding: 33rem 2rem 4rem;
+        hgroup {
+            max-width:530px;
+        }
+        #some-parent {
+            width: 100%;
+            max-width: 530px;
+            button {
+                margin-top:2rem;
+            }
+        }
+        #resources-btns {
+            @include flex();
+            margin-bottom:1rem;
+            >* {
+                height:10px;
+                width:10px;
+                background:rgba(0,29,76,0.2);
+                border-radius:10px;
+                &:not(:first-child) {
+                    margin-left:1rem;
+                }
+            }
+        }
+    }
+}
+#resources[data-index='0'] #resources-btns>:nth-child(1) {
+    background: rgba(0,98,255,0.4) !important; 
+}
+@media (min-width:768px) {
+    #resources {
+        .container {
+            min-height:800px;
+            @include justify-content(flex-end);
+            #some-parent {
+                width:50%;
+            }
+            #resources-btns {
+                @include flex();
+                margin-bottom: 1rem; 
+                >* {
+                    height:10px;
+                    width:10px;
+                    background:rgba(0,29,76,0.2);
+                    border-radius:10px;
+                    &:not(:first-child) {
+                        margin-left:1rem;
+                    }
+                }
+                li {
+
+                }
+            }
+            hgroup {
+                max-width:530px;
+            }
+        }
+    }
+}
+
+.clickables {
+    >* {
+        cursor:pointer;
+    }
 }
 #ecosystem {
     padding: 0;

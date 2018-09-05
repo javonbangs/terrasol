@@ -39,7 +39,30 @@ block content
                 h1 Meet Terrasol.   
                 p Terrasol is making lives easier at the home and office, utilizing algorithms and Neural Networks pioneered by Professor Geoffrey Hinton. Terrasol is self-sustaining and can be yours today.
             #desc-art
-                include ./assets/brain.svg  
+                include ./assets/brain.svg            
+    section.parent-slider#resources(data-index="0")
+        #resources-bg-wrap
+            include ./assets/bg.svg
+        #resources-svg
+            include ./assets/peter.svg
+        .container 
+            #some-parent
+                ul.clickables#resources-btns
+                    li
+                    li
+                    li
+                .scrollable#resources-scroll
+                    hgroup#resources-hgroup
+                        h1 Life, Automated.
+                        p Peter, a busy salesman, has a problem. He loses money and sleep with a home climate control system that is obsolete. He always finds himself rushing home to tinker with the thermostat.
+                        p Now, using Terrasol's technology he can control it from anywhere. The neural network will start to learn Peter's patterns and do it for him when he forgets.
+                    hgroup#resources-hgroup
+                    hgroup#resources-hgroup
+                button.secondary.iconed-rt(data-clickable="1")
+                    div
+                        span Next
+                        div.icon-chevron-right
+
 
     script.
         window.addEventListener('DOMContentLoaded', function () {

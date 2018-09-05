@@ -145,7 +145,6 @@ ul {
     white-space: nowrap;
 }
 .scrollable {
-    position: relative; // calucations are incorrect w/o this
     @include flex();
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -287,6 +286,12 @@ button.iconed-rt, button.iconed-lt  {
         flex: 1;
         }
     }
+}
+button:not(.nospacing) {
+    letter-spacing:3px;
+}
+button:not(.short) {
+    height:50px;
 }
 button.iconed-rt, button.iconed-lt {
     >div {
@@ -571,7 +576,7 @@ h5 {
     }
     .container {
         padding: 0 2rem;
-        max-width: 1280px;
+        max-width: 1440px;
     }
     .container-sm {
         
