@@ -9,6 +9,18 @@
         display: none
     }
 }
+
+[data-name='car1'] {
+    animation: car1 5s linear infinite;
+}
+div#car-svg {
+    position: absolute;
+    margin-top:calc(34rem);
+    max-width:300px;
+    svg {
+        width:80%;
+    }
+}
 [data-name='green'] > * {
     fill: $color-1!important
 }

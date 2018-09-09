@@ -164,3 +164,12 @@
          opacity:1;
      }
  }
+
+ @include keyframes(car1) {
+     75% {
+         transform: translate(1400px);
+     }
+     100% {
+         transform: translate(1400px);
+     }
+ }
