@@ -17,8 +17,18 @@ div#car-svg {
     position: absolute;
     margin-top:calc(34rem);
     max-width:300px;
+    left:10%;
     svg {
         width:80%;
+    }
+}
+@media (max-width:768px) {
+    div#car-svg {
+        margin-top:calc(14.5rem);
+        left:-25%;
+        svg {
+            width:50%;
+        }
     }
 }
 [data-name='green'] > * {
